@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <path id="Rectangle_26" data-name="Rectangle 26" d="M40.282,0h0A4.718,4.718,0,0,1,45,4.718V31.935A13.065,13.065,0,0,1,31.935,45H4.718A4.718,4.718,0,0,1,0,40.282v0A40.282,40.282,0,0,1,40.282,0Z" fill="#57e2e5"/>
+  <g id="flip-2" transform="translate(8 8)">
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="34" height="34" transform="translate(34 34) rotate(180)" opacity="0"/>
+    <path id="Path_20" data-name="Path 20" d="M7.142,12.875a1.416,1.416,0,0,0,2-2L7.311,9.053H24.233a2.2,2.2,0,0,1,2.242,2.158v3.483a1.41,1.41,0,0,0,2.82,0V11.211a5.02,5.02,0,0,0-5.062-4.978H7.311L9.144,4.414a1.416,1.416,0,1,0-2-2l-4.23,4.23a1.41,1.41,0,0,0,0,2Z" transform="translate(1.053 7.899)"/>
+  </g>
+</svg>

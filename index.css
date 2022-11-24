@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* z-index: inherit; */
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #001011;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+@keyframes fade {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin-inline: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 56px;
+    height: 56px;
+    margin-inline: 3rem;
+  }
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 10000;
+  background-color: #001011;
+  transition: all 1s;
+}
+#outerbox {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  /* border: 10px solid red; */
+  position: relative;
+  z-index: 10000;
+  transform: scale(0.6);
+}
+.flyer{
+  opacity: 0;
+  z-index: 10000;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: #57E2E5;
+}
+@keyframes fromLeft {
+  0% {
+    transform: translate(-800px, -400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translate(800px, -400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fromBottom {
+  0% {
+    transform: translateY(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.barOuter {
+  width: 160px;
+  height: 32px;
+  border: 2px solid #57E2E5;
+  position: absolute;
+  z-index: 10001;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+#outerbox div.flyer:nth-child(1) {
+  clip-path: polygon(34.27069% 18.22327%, 51.09575% 2.6%, 47.77315% 21.47517%, 29.67562% 37.09843%);
+  animation: fromLeft 1s forwards ease-in-out;
+  animation-delay: 0.6s;
+}
+.flyer,#outerbox div:nth-child(2) {
+  clip-path: polygon(18.29396% 33.0689%, 32.22058% 20.55615%, 27.6255% 38.93647%, 12.92125% 51.51991%);
+  animation: fromLeft 1s forwards ease-in-out;
+  animation-delay: 1.0s;
+}
+.flyer,#outerbox div:nth-child(3) {
+  clip-path: polygon(12.07293% 53.99418%, 26.63579% 41.97629%, 21.05101% 64.6689%, 5.35705% 76.40403%);
+  animation: fromLeft 1s forwards ease-in-out;
+  animation-delay: 1.4s;
+}
+.flyer,#outerbox div:nth-child(4) {
+  clip-path: polygon(53.92349% 3.16555%, 73.85906% 18.08188%, 72.94004% 37.02774%, 50.88367% 22.1821%);
+  animation: fromRight 1s forwards ease-in-out;
+  animation-delay: 0.8s;
+}
+.flyer,#outerbox div:nth-child(5) {
+  clip-path: polygon(76.61611% 20.13199%, 93.51186% 32.78613%, 94.0774% 51.09575%, 75.90917% 38.93647%);
+  animation: fromRight 1s forwards ease-in-out;
+  animation-delay: 1.2s;
+}
+.flyer,#outerbox div:nth-child(6) {
+  clip-path: polygon(75.5557% 41.69351%, 94.1481% 53.8528%, 94.64295% 75.69709%, 74.63669% 64.59821%);
+  animation: fromRight 1s forwards ease-in-out;
+  animation-delay: 1.6s;
+}
+.flyer,#outerbox div:nth-child(7) {
+  clip-path: polygon(22.53557% 67.35526%, 47.70246% 78.8783%, 31.58434% 88.28054%, 7.19508% 78.59553%);
+  animation: fromBottom 1s forwards ease-in-out;
+  animation-delay: 1.0s;
+}
+.flyer,#outerbox div:nth-child(8) {
+  clip-path: polygon(50.31812% 79.9387%, 71.17271% 89.48233%, 54.63043% 97.4%, 34.05861% 89.34094%);
+  animation: fromBottom 1s forwards ease-in-out;
+  animation-delay: 1.4s;
+}
+.flyer,#outerbox div:nth-child(9) {
+  clip-path: polygon(72.3745% 67.35526%, 93.0877% 78.73691%, 73.36421% 88.35123%, 52.50962% 78.80761%);
+  animation: fromBottom 1s forwards ease-in-out;
+  animation-delay: 1.8s;
+}
+.flyer,#outerbox div:nth-child(10) {
+  clip-path: polygon(54.77181% 53.71141%, 72.3038% 41.69351%, 71.17271% 64.52752%, 52.08546% 75.76779%);
+  animation: fromLeft 1s forwards ease-in-out;
+  animation-delay: 1.8s;
+}
+.flyer,#outerbox div:nth-child(11) {
+  clip-path: polygon(30.24116% 42.11767%, 51.55526% 53.9438%, 48.55078% 75.97987%, 24.72707% 64.81029%);
+  animation: fromRight 1s forwards ease-in-out;
+  animation-delay: 2.0s;
+}
+.flyer,#outerbox div:nth-child(12) {
+  clip-path: polygon(49.4698% 24.65638%, 71.45548% 39.07785%, 53.49933% 51.94407%, 31.65503% 39.57271%);
+  animation: fromBottom 1s forwards ease-in-out;
+  animation-delay: 2.2s;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #001011;
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+  background-color: #001011;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #57E2E5;
+  border-radius: 10px;
+}
+
+html {
+  scroll-padding-top: 6rem;
+}

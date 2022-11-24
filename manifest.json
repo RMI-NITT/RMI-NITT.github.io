@@ -1,0 +1,28 @@
+{
+  "short_name": "RMI",
+  "name": "Robotics And Machine Intelligence - NIT Trichy",
+  "description": "Robotics and Machine Intelligence (RMI) is the official robotics and technical research club of NIT Trichy. We are a close-knit community of technology enthusiasts from diverse backgrounds who take an interest in building things for the greater good of those around us and bringing innovation into our everyday lives.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "56x56",
+      "type": "image/x-icon",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
