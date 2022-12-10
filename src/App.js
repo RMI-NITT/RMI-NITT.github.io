@@ -60,7 +60,7 @@ function App() {
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
-    fetch("https://rmi-webteam.github.io/rmi-web-data/data/data.json")
+    fetch("https://rmi-webteam.github.io/test-json-data/data/data.json")
       .then((response) => {
         return response.json();
       })
